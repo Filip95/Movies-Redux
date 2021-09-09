@@ -1,4 +1,5 @@
 import * as moviesSagas from "./movies/sagas";
+import * as activeUserSagas from "./activeUser/sagas";
 // moviesSagas = {
 //     watchGetMovies: function*() {},
 //     watchAddMovie: function*() {},
@@ -7,6 +8,7 @@ import * as moviesSagas from "./movies/sagas";
 
 const sagas = {
   ...moviesSagas,
+  ...activeUserSagas,
   // watchGetMovies: function*() {},
   // watchAddMovie: function*() {},
   // watchDeleteMovie: function*() {},
